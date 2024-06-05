@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: wheat;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgb(4, 192, 167);
+  z-index: -1;
+}
+.tabs-one {
+    height: 65vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(0, 255, 191), #0000);
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    font-weight: 900;
+    width: 100%;
+    font-size: 16px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #000;
+    border: none;
+    color: wheat;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #000;
+    font-weight: 900;
+    border-bottom: 1px solid wheat;
+}
+
+.list-group-item:hover {
+    background-color: #0009 ;
+    color: wheat;
+    cursor: pointer;
+}
+
+
+#sec .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 90%;
+    width: 80%;
+    border-radius: 10px;
+}
+#sec .content .row {
+    background: linear-gradient(128deg, #0000, white, rgb(0, 255, 191));
+    border-radius: 10px;
+}
+
+#sec .side-image {
+    background: url('assets/img/b3.jpg');
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+}
+#sec .side-image-one {
+    background: #0006;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#sec .fun-side {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    width: 100wh;
+    height: 90vh;
+    border-radius: 10px;
+}
+#sec .fun-side h3 {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 56px;
+}
+#contacts .tokens,
+#recents .tokens,
+#keypad .tokens {
+    font-size: 18px;    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    font-weight: 900;
+    font-family: cursive;
+}
+#contacts h3,
+#recents h3,
+#keypad h3 {
+    font-size: 26px;
+    font-weight: 900;
+    animation: fadeIn 1s ease-in-out;
+}
+#keypad .btn {
+    background-color: transparent;
+    color: #000;
+    font-weight: 900;
+    width: 100px;
+    border: 1px solid #000;
+}
+#keypad .btn:hover {
+    background-color: #0049;
+    color: wheat;
+    font-weight: 900;
+    width: 100px;
+    border: 1px solid wheat;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+/* small devices */
+
+@media (max-width: 768px) {
+    #sec .side-image img {
+        display: none;
+    }
+    #sec .one {
+        width: 100wh;
+        height: 90vh;
+    }
+    .tabs-one {
+        height: 70vh;
+        width: 100%;
+        background: transparent;
+    }
+    .nav-tabs .nav-link {
+        color: #000;
+        font-weight: 900;
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .list-group-item {
+        background-color: transparent;
+        font-size: 12px;
+        color: #000;
+        font-weight: 900;
+        border-bottom: 1px solid wheat;
+    }
+}

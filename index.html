@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunSMS</title>
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="sec">
+      <div class="container-fluid">
+        <div class="content">
+            <div class="row one">
+                <div class="col-md-5 side-image p-0 m-0">
+                    <div class="side-image-one p-0 m-0">
+                        <!-- <img src="assets/img/b1.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="mt-4">
+                        <!-- <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Search or dial">
+                            </div>
+                        </div> -->
+                        <div class="tabs-one">
+                            <!-- Tab content -->
+                            <div class="tab-content" id="phoneTabContent">
+                                <!-- Keypad tab -->
+                                <div class="tab-pane fade show active" id="keypad" role="tabpanel">
+                                    <div class="keypad mt-3 p-3">
+                                        <div class="d-flex justify-content-between">
+                                            <h3>Compose Message</h3>
+                                            <span class="tokens p-2">300</span>
+                                        </div>
+                                        <div>
+                                            <label for="selectGroup">Group:</label>
+                                            <select name="group" id="group" class="form-control shadow">
+                                                <option selected disabled> --- Select Group ---</option>
+                                                <option value="all-classes">All</option>
+                                                <option value="form-four">Form Four</option>
+                                                <option value="form-three">Form Three</option>
+                                                <option value="form-two">Form Two</option>
+                                                <option value="form-one">Form One</option>
+                                            </select>
+                                            <label for="Message">Message:</label>
+                                            <textarea name="message" id="message" class="form-control shadow" placeholder="Write your Message here!!!" maxlength="240" rows="4"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="btn p-3 m-4 shadow">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Recents tab -->
+                                <div class="tab-pane fade" id="recents" role="tabpanel">
+                                    <div class="recents mt-3 p-3">
+                                        <div class="d-flex justify-content-between">
+                                            <h3>Recent Messages</h3>
+                                            <span class="tokens p-2">300</span>
+                                        </div>
+                                        <ul class="list-group mt-3">
+                                            <li class="list-group-item">Hello World ... <span class="float-right">Yesterday</span></li>
+                                            <li class="list-group-item">Good morning... <span class="float-right">2 days ago</span></li>
+                                            <li class="list-group-item">We are delig...<span class="float-right">3 days ago</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Contacts tab -->
+                                <div class="tab-pane fade" id="contacts" role="tabpanel">
+                                    <div class="contacts mt-3 p-3">
+                                        <div class="d-flex justify-content-between">
+                                            <h3>Recent Messages</h3>
+                                            <span class="tokens p-2">300</span>
+                                        </div>
+
+                                        <ul class="list-group mt-3">
+                                            <li class="list-group-item">Alice - Peter</li>
+                                            <li class="list-group-item">Bob - Maina</li>
+                                            <li class="list-group-item">Jane -Doe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tabs for navigation -->
+                        <ul class="nav nav-tabs mt-3" id="phoneTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="keypad-tab" data-toggle="tab" href="#keypad" role="tab">compose</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="recents-tab" data-toggle="tab" href="#recents" role="tab">Recents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contacts-tab" data-toggle="tab" href="#contacts" role="tab">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>        
+        </div>
+      </div>
+    </main>
+    
+
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.js"></script>
+  <script src="assets/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
